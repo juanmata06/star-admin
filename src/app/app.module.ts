@@ -19,11 +19,21 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { firebaseAppConfig } from './configs/firebase-app.config';
 import { appReducers } from './app.reducer';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { AuthComponent } from './modules/auth/auth.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    NavbarComponent,
+    SidebarComponent,
+    DashboardComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
